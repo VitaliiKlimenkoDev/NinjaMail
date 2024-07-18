@@ -1,0 +1,282 @@
+:root {
+    box-sizing: border-box;
+    --Raleway: 'Raleway', sans-serif;
+    --Playfair:'Playfair Display', serif;
+    --Main-green: #4BA87D;
+    --Second-green: #CAEAC7;
+}
+
+
+
+.first-part {
+    position: relative;
+    margin-top: 30px;
+}
+@media screen and (min-width: 360px) {
+    .first-part {
+        margin: 30px auto;
+        max-width: 300px;
+    }
+}
+@media screen and (min-width: 500px) {
+    .first-part {
+        margin: min(11.600vw, 136px) 0 0 0;
+        max-width: unset;
+    }
+}
+@media screen and (min-width: 600px) {
+    .first-part {
+        padding-top: 14px;
+    }
+}
+@media screen and (min-width: 768px) {
+    .first-part {
+        padding-top: min(1.823vw, 22px)
+    }
+}
+
+
+.f-part-h {
+    font-family: var(--Playfair);
+    font-weight: 900;
+    font-size: 2.25rem;
+    line-height: 128%;
+    max-width: 18.75rem;
+}
+@media all and (min-width: 600px) {
+    .f-part-h {
+        max-width: 23.75rem;
+    }
+    .f-p-br {
+        display: none;
+    }
+}
+
+
+.f-part-img {
+    position: absolute;
+    top: 51px;
+    z-index: -100;
+    filter: drop-shadow(0px 3px 16px rgba(0, 0, 0, 0.160784));
+}
+@media screen and (min-width: 500px) {
+    .f-part-img {
+        right: 0;
+        top: 0;
+        height: 100%;
+    }
+}
+@media screen and (min-width: 600px) {
+    .f-part-img {
+        height: 250px;
+    }
+}
+@media screen and (min-width: 768px) {
+    .f-part-img {
+        height: 32.552vw;
+        max-height: 383px;
+    }
+}
+
+
+.f-part-img-f {
+    object-fit: cover;
+    height: 100%;
+}
+
+
+.f-part-p {
+    font-weight: 500;
+    font-size: 0.875rem;
+    line-height: 114%;
+    margin-top: 98px;
+    max-width: 18.75rem;
+}
+@media screen and (min-width: 500px) {
+    .f-part-p {
+        margin-top: 17px;
+    }
+}
+@media all and (min-width: 500px) {
+    .f-part-p {
+        max-width: 20.75rem;
+    }
+}
+@media screen and (min-width: 768px) {
+    .f-part-p {
+        margin-top: min(2.214vw, 23px);
+    }
+}
+
+
+.f-part-btns {
+    display: flex;
+    margin-top: 16px;
+    column-gap: 14px;
+    align-items: center;
+}
+@media screen and (min-width: 600px) {
+    .f-part-btns {
+        margin-top: 25px;
+        column-gap: 29px;
+    }
+}
+@media screen and (min-width: 768px) {
+    .f-part-btns {
+        margin-top: min(3.255vw, 35px);
+        column-gap: min(3.776vw, 45px);
+    }
+}
+
+
+.f-part-one-btn {
+    padding: 15px 34px;
+    background-color: var(--Main-green);
+    color: white;
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: 0.813rem;
+    line-height: 115%;
+    letter-spacing: 1px;
+    text-align: center;
+    cursor: pointer;
+    transition: transform 0.3s ease, opacity 0.2s ease;
+}
+@media screen and (min-width: 768px) {
+    .f-part-one-btn {
+        padding: min(1.693vw, 19px) min(4.557vw, 47px) 
+                 min(1.823vw, 21px) min(4.036vw, 48px);
+    }
+}
+@media screen and (hover) {
+    .f-part-one-btn:hover {
+        transform: scale(0.97);
+    }
+}
+.f-part-one-btn:active {
+    opacity: 0.5;
+}
+
+
+.f-part-two-btn {
+    padding: 12px 18px;
+    border: 3px solid var(--Main-green);
+    background-color: white;
+    color: var(--Main-green);
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: 0.813rem;
+    line-height: 115%;
+    letter-spacing: 1px;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.3s ease, transform 0.2s ease;
+}
+@media screen and (min-width: 768px) {
+    .f-part-two-btn {
+        padding: min(1.302vw, 16px) min(2.344vw, 24px) 
+                 min(1.432vw, 18px) min(2.344vw, 26px);
+    }
+}
+@media screen and (hover) {
+    .f-part-two-btn:hover {
+        background-color: var(--Main-green);
+        color: white;
+    }
+}
+.f-part-two-btn:active {
+    transform: scale(0.97);
+}
+
+
+.f-part-one-rec {
+    display: none;
+    position: absolute;
+    width: min(2.474vw, 30px);
+    height: min(2.604vw, 30px);
+    background-color: #EFE1BC;
+    bottom: calc(249 / 225 * 100%);
+    left: calc(99 / 711 * 100%);
+}
+.f-part-two-rec {
+    display: none;
+    position: absolute;
+    width: min(3.125vw, 37px);
+    height: min(3.125vw, 37px);
+    background-color: #D9F4F2;
+    z-index: -150;
+    bottom: calc(215 / 225 * 100%);
+    left: calc(407 / 711 * 100%);
+    border-radius: 50%;
+}
+.f-part-three-rec {
+    display: none;
+    position: absolute;
+    width: min(2.604vw, 30px);
+    height: min(2.604vw, 30px);
+    background-color: #F4F4F4;
+    bottom: calc(242 / 225 * 100%);
+    left: calc(571 / 711 * 100%);
+}
+.f-part-four-rec {
+    display: none;
+    position: absolute;
+    width: min(4.948vw, 58px);
+    height: min(4.948vw, 58px);
+    background-color: black;
+    transform: rotate(45deg);
+    bottom: calc(195 / 225 * 100%);
+    left: calc(690 / 711 * 100%);
+    z-index: -150;
+}
+.f-part-five-rec {
+    display: none;
+    position: absolute;
+    width: min(0.911vw, 11px);
+    height: min(0.911vw, 11px);
+    border: 1px solid #707070;
+    bottom: calc(53 / 225 * 100%);
+    right: calc(725 / 711 * 100%);
+    border-radius: 50%;
+}
+.f-part-six-rec {
+    display: none;
+    position: absolute;
+    width: min(3.385vw, 40px);
+    height: min(3.385vw, 40px);
+    background-color: #F4BEBD;
+    top: calc(271 / 225 * 100%);
+    left: calc(3 / 711 * 100%);
+    transform: rotate(45deg);
+}
+.f-part-seven-rec {
+    display: none;
+    position: absolute;
+    width: min(1.302vw, 15px);
+    height: min(1.302vw, 15px);
+    top: calc(274 / 225 * 100%);
+    left: calc(334 / 711 * 100%);
+    border-radius: 50%;
+    border: 1px solid #707070;
+}
+.f-part-eight-rec {
+    display: none;
+    position: absolute;
+    width: 11px;
+    height: 11px;
+    border: 1px solid #707070;
+    border-radius: 50%;
+    left: 1151px;
+    bottom: 434px;
+}
+@media screen and (min-width: 768px) {
+    .f-part-one-rec, .f-part-two-rec, .f-part-three-rec, .f-part-four-rec,
+    .f-part-five-rec, .f-part-six-rec, .f-part-seven-rec {
+        display: block;
+    }
+}
+@media screen and (min-width: 1440px) {
+    .f-part-eight-rec {
+        display: block;
+    }
+}
